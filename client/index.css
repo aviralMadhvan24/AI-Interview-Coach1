@@ -1,61 +1,62 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @plugin 'tailwindcss-animate';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 
-  --background: hsl(0 0% 100%);
-  --foreground: hsl(222.2 84% 4.9%);
+  /* Career Compass Dark Theme Colors */
+  --background: 210 12% 7%; /* #121212 */
+  --foreground: 0 0% 100%; /* #FFFFFF */
 
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(222.2 84% 4.9%);
+  --card: 0 0% 12%; /* #1E1E1E */
+  --card-foreground: 0 0% 100%; /* #FFFFFF */
 
-  --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(222.2 84% 4.9%);
+  --popover: 0 0% 12%; /* #1E1E1E */
+  --popover-foreground: 0 0% 100%; /* #FFFFFF */
 
-  --primary: hsl(222.2 47.4% 11.2%);
-  --primary-foreground: hsl(210 40% 98%);
+  --primary: 174 100% 29%; /* #1ABC9C - Teal */
+  --primary-foreground: 0 0% 100%; /* #FFFFFF */
 
-  --secondary: hsl(210 40% 96.1%);
-  --secondary-foreground: hsl(222.2 47.4% 11.2%);
+  --secondary: 0 0% 88%; /* #E0E0E0 */
+  --secondary-foreground: 210 12% 7%; /* #121212 */
 
-  --muted: hsl(210 40% 96.1%);
-  --muted-foreground: hsl(215.4 16.3% 46.9%);
+  --muted: 0 0% 12%; /* #1E1E1E */
+  --muted-foreground: 0 0% 88%; /* #E0E0E0 */
 
-  --accent: hsl(210 40% 96.1%);
-  --accent-foreground: hsl(222.2 47.4% 11.2%);
+  --accent: 174 100% 29%; /* #1ABC9C - Teal */
+  --accent-foreground: 0 0% 100%; /* #FFFFFF */
 
-  --destructive: hsl(0 84.2% 60.2%);
-  --destructive-foreground: hsl(210 40% 98%);
+  --destructive: 4 90% 58%; /* #E74C3C - Error */
+  --destructive-foreground: 0 0% 100%; /* #FFFFFF */
 
-  --border: hsl(214.3 31.8% 91.4%);
-  --input: hsl(214.3 31.8% 91.4%);
-  --ring: hsl(222.2 84% 4.9%);
+  --success: 145 63% 49%; /* #2ECC71 - Success */
+  --success-foreground: 0 0% 100%; /* #FFFFFF */
 
-  --radius: 0.5rem;
+  --border: 0 0% 20%; /* Subtle border */
+  --input: 0 0% 12%; /* #1E1E1E */
+  --ring: 174 100% 29%; /* #1ABC9C - Teal */
 
-  --sidebar-background: hsl(0 0% 98%);
+  --radius: 1rem; /* 2xl rounded corners */
 
-  --sidebar-foreground: hsl(240 5.3% 26.1%);
-
-  --sidebar-primary: hsl(240 5.9% 10%);
-
-  --sidebar-primary-foreground: hsl(0 0% 98%);
-
-  --sidebar-accent: hsl(240 4.8% 95.9%);
-
-  --sidebar-accent-foreground: hsl(240 5.9% 10%);
-
-  --sidebar-border: hsl(220 13% 91%);
-
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  /* Sidebar colors for dark theme */
+  --sidebar-background: 0 0% 12%; /* #1E1E1E */
+  --sidebar-foreground: 0 0% 88%; /* #E0E0E0 */
+  --sidebar-primary: 174 100% 29%; /* #1ABC9C */
+  --sidebar-primary-foreground: 0 0% 100%; /* #FFFFFF */
+  --sidebar-accent: 0 0% 20%; /* Hover state */
+  --sidebar-accent-foreground: 0 0% 100%; /* #FFFFFF */
+  --sidebar-border: 0 0% 20%; /* Border color */
+  --sidebar-ring: 174 100% 29%; /* #1ABC9C */
 }
 
 @utility container {
