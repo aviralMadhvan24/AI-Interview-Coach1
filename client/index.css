@@ -67,6 +67,7 @@
   border-color: hsl(var(--border));
 }
 
+html,
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
@@ -75,9 +76,9 @@ body {
     "calt" 1;
 }
 
-/* Apply dark theme globally */
-html {
-  @apply dark;
+#root {
+  background-color: hsl(var(--background));
+  min-height: 100vh;
 }
 
 /* Custom scrollbar */
